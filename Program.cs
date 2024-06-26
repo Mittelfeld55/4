@@ -47,8 +47,7 @@ for (int i = 0; i < y; i++)
             Console.WriteLine("Der Gegner hat die Karte " + benoetigteKarte);
             stapelB = stapelB.Replace(benoetigteKarte, "");
             kartenDesSpielers += benoetigteKarte;
-            Console.Write("\nDeine Karten : " + kartenDesSpielers + " " + kartenDesSpielers.Length/2);
-            Console.WriteLine("|      Karten des Gegners: " + stapelB + " " + stapelB.Length/2);
+            Console.Write("\nDeine Karten : " + kartenDesSpielers + " " + kartenDesSpielers.Length/2 + " |      Karten des Gegners: " + stapelB + " " + stapelB.Length/2);
         }
         else
         {
