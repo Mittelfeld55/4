@@ -29,14 +29,16 @@ Console.Write("\nDeine Karten : " + kartenDesSpielers + " " + kartenDesSpielers.
 Console.WriteLine("      |      Karten des Gegners: " + stapelB + " " + stapelB.Length/2);
 
 //Nach Karten Fragen
+int y = 15;
 
-for ( int i = 0; i < 15; i++)
+for (int i = 0; i < y; i++)
 {
-    Console.WriteLine("Welche Karte brauchst? (z.B. A1)	");
+    Console.WriteLine("\nWelche Karte brauchst? (z.B. A1)	");
     var benoetigteKarte = Console.ReadLine()?.Trim().ToUpper() ?? " ";
     if (benoetigteKarte == " " || benoetigteKarte.Length > 2) 
     {
-        Console.WriteLine("Du hast keine oder 2 Karten eingegeben.");
+        Console.WriteLine(" Error! Du hast keine oder 2 Karten eingegeben.");
+        
     }
     else 
     {
@@ -57,7 +59,6 @@ for ( int i = 0; i < 15; i++)
             Console.WriteLine("Du hast die Karte " + gezogeneKartekarte + " gezogen.");
             blatt = blatt.Remove(startIndex, 2);
             kartenDesSpielers += gezogeneKartekarte;
-
         }
         string zieheBlatt = "A1A2A3A4B1B2B3B4C1C2C3C4D1D2D3D4E1E2E3E4F1F2F3F4G1G2G3G4H1H2H3H4";
         string SubstringToRemove = stapelB;
@@ -85,8 +86,17 @@ for ( int i = 0; i < 15; i++)
             Console.Write("\nDeine Karten : " + kartenDesSpielers + " " + kartenDesSpielers.Length/2);
             Console.WriteLine("|      Karten des Gegners: " + stapelB + " " + stapelB.Length/2);
         }
-            
-
-        //Test
+    }
+    int pCA = kartenDesSpielers.Count(c => c == 'A');
+    int pCB = kartenDesSpielers.Count(c => c == 'B');
+    int pCC = kartenDesSpielers.Count(c => c == 'C');
+    int pCD = kartenDesSpielers.Count(c => c == 'D');
+    int pCE = kartenDesSpielers.Count(c => c == 'E');
+    int pCF = kartenDesSpielers.Count(c => c == 'F');
+    int pCG = kartenDesSpielers.Count(c => c == 'G');
+    int pCH = kartenDesSpielers.Count(c => c == 'H');
+    if (pCA == 4 || pCB == 4 ||pCC == 4 || pCD == 4 || pCE == 4 || pCF == 4 || pCG == 4 || pCF == 4)
+    {
+        Console.WriteLine("Du hast gewonnen!");
     }
 }
