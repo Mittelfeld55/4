@@ -28,7 +28,7 @@ for (int i = 0; i < 14; i++)
 Console.Write("\nDeine Karten : " + kartenDesSpielers + " " + kartenDesSpielers.Length/2);
 Console.WriteLine("      |      Karten des Gegners: " + stapelB + " " + stapelB.Length/2);
 
-//Nach Karten Fragen
+//Nach Karten Fragenx
 int y = 15;
 for (int i = 0; i < y; i++)
 {
@@ -82,8 +82,7 @@ for (int i = 0; i < y; i++)
             Console.WriteLine("Der Computer hat " + gezogeneKartekarte + " gezogen.");
             blatt = blatt.Remove(startIndex, 2);
             stapelB += gezogeneKartekarte;
-            Console.Write("\nDeine Karten : " + kartenDesSpielers + " " + kartenDesSpielers.Length/2);
-            Console.WriteLine("|      Karten des Gegners: " + stapelB + " " + stapelB.Length/2);
+            Console.Write("\nDeine Karten : " + kartenDesSpielers + " " + kartenDesSpielers.Length/2 + " |      Karten des Gegners: " + stapelB + " " + stapelB.Length/2);
         }
     }
   
