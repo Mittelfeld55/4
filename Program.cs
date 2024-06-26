@@ -24,5 +24,5 @@ for (int i = 0; i < 14; i++)
 
 var kartenAufDemStapel = blatt;
 Console.Write("\nDeine Karten : " + kartenDesSpielers + " " + kartenDesSpielers.Length/2);
-Console.WriteLine("     Karten des Gegners: " + stapelB + " " + stapelB.Length/2);
+Console.WriteLine("|      Karten des Gegners: " + stapelB + " " + stapelB.Length/2);
 // Console.WriteLine("Karten, die auf dem Stapel sind: " + kartenAufDemStapel + " " + kartenAufDemStapel.Length/2);
