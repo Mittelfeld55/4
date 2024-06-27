@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\test\\4\\5.csproj": {}
+    "D:\\Test\\4\\5.csproj": {}
   },
   "projects": {
-    "D:\\test\\4\\5.csproj": {
+    "D:\\Test\\4\\5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\test\\4\\5.csproj",
+        "projectUniqueName": "D:\\Test\\4\\5.csproj",
         "projectName": "5",
-        "projectPath": "D:\\test\\4\\5.csproj",
+        "projectPath": "D:\\Test\\4\\5.csproj",
         "packagesPath": "C:\\Users\\MaxScheller\\.nuget\\packages\\",
-        "outputPath": "D:\\test\\4\\obj\\",
+        "outputPath": "D:\\Test\\4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
