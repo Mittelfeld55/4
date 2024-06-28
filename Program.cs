@@ -5,10 +5,10 @@ Random rnd = new Random();
 int anzahlKartenImBlatt = blatt.Length / 2;
 string kartenDesSpielers = "";
 string stapelB = "";
-var pPunkte = 0;
+var pPunkte = 0; 
 var cPunkte = 0;
 bool sZ = true;
-bool cZ = false;
+bool cZ;
 
 //Karten verteilen
 for (int i = 0; i < 14; i++)
@@ -59,8 +59,8 @@ for (int i = 0; i < y; i++)
                 kartenDesSpielers += gezogeneKartekarte;
             }
         }
-        cZ = true;
-        sZ = false;
+        cZ = !cZ;
+        sZ = !sZ;
     }
     else if (cZ & !sZ) { //Gegner Zug
         string zieheBlatt = "A1A2A3A4B1B2B3B4C1C2C3C4D1D2D3D4E1E2E3E4F1F2F3F4G1G2G3G4H1H2H3H4";
@@ -84,8 +84,8 @@ for (int i = 0; i < y; i++)
             stapelB += gezogeneKartekarte;
             Console.Write("\nDu hast die Karte " + gefragteKarte + " nicht. \nDer Computer hat " + gezogeneKartekarte + " gezogen.\nDeine Karten : " + kartenDesSpielers + " " + kartenDesSpielers.Length/2 + " |      Karten des Gegners: " + stapelB + " " + stapelB.Length/2);
         }
-        cZ = false;
-        sZ = true;
+        cZ = !cZ;
+        sZ = !sZ;
     }
     else
     {
